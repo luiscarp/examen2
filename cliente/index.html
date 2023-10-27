@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes videojuegos</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="Conex()">
+    <h1>Jugemos</h1>
+    <h1>Escoge tu personaje!</h1>
+
+    <div id="clase">
+        <h2>Personaje</h2>
+        <label for="classSelection">Selecciona una clase</label>
+        <select id="classSelection" onchange="updateWeapons()">
+            <option value="">-- Seleccione una clase --</option>
+  
+        </select>
+    </div>
+
+
+    <div id="arma">
+        <h2>Armas</h2>
+        <label for="weaponSelection" id="weaponLabel" style="display:none">Seleccione una arma</label>
+        <select id="weaponSelection" disabled onchange="showSelections()">
+            <!-- Las opciones se llenarán dinámicamente con JavaScript -->
+        </select>
+    </div>
+
+
+
+
+
+    <div id="resultDiv">
+        <h2>Tu personaje, capacidades y armas ... </h2>
+        <!-- Las selecciones se mostrarán aquí -->
+    </div>
+
+
+</body>
+
+</html>
